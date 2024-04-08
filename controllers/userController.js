@@ -1,7 +1,7 @@
-import UserModel from "../models/user.model.js";
 import bcrypt, { genSalt, hash } from "bcrypt";
 import jwt from "jsonwebtoken";
 import { set } from "mongoose";
+import UserModel from "../models/userModel1.js";
 
 export const Register = async (req, res) => {
   const { email, fullName, password, conf_password } = req.body;
